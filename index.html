@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/global.css">
+    <script src="./scripts/global.js" defer></script>
+    <title>credenciamento</title>
+</head>
+    <body>
+        <main id="main_container">
+            <header id="main_header">
+                
+            </header>
+            <div id="main_form">
+
+                <div class="nascionalidade">
+                    <input type="radio" name="rdb_brasileiro" id="rdb_brasileiro" value="brasileiro" onclick="isNascionalidade()">
+                    <label for="rdb_brasileiro">Basileiro</label>
+                </div>
+                <div class="nascionalidade">
+                    <input type="radio" name="rdb_estrangeiro" id="rdb_estrangeiro" value="estrangeiro" onclick="isNascionalidade()">
+                    <label for="rdb_estrangeiro">Estrangeiro</label>
+                </div>
+                <div class="check">
+                    <input type="checkbox" name="cbx_estudante" id="cbx_estudante" value="estudante" onclick="isNascionalidade()">
+                    <label for="cbx_estudante">estudante</label>
+                </div>
+                <section class="dados_pessoais dados">
+                    <header class="section_header">
+                        <h2>Dados pessoais</h2>
+                    </header>
+                    <div class="content">
+                        <input type="text" id="txt_nome" placeholder="nome">
+                        <input type="email" id="txt_email" placeholder="email">
+                        <input type="text" id="txt_cpf" placeholder="cpf">
+                        <input class="estudantil" type="text" id="txt_identificacao_estudantil" placeholder="identificação estudantíl">
+                    </div>
+                </section>
+                <section class="dados_pessoais dados">
+                    <header class="section_header">
+                        <h2>Endereço</h2>
+                    </header>
+                    <div class="content">
+                        <input type="text" id="txt_logradouro" placeholder="Logradouro">
+                        <input type="text" id="txt_numero" placeholder="nº">
+                        <input type="text" id="txt_complemento" placeholder="complemento">
+                        <input type="text" id="txt_bairro" placeholder="bairro">
+                        <input type="text" id="txt_cidade" placeholder="cidade">
+                        <input type="text" id="txt_estado" placeholder="estado">
+                        <input type="text" id="txt_uf" placeholder="UF">
+                        <input type="text" id="txt_cep" placeholder="cep">
+                    </div>
+                </section>
+                <section class="dados_profissionais dados">
+                    <header class="section_header">
+                        <h2>dados profissionais</h2>
+                    </header>
+                    <div class="content">
+                        <input type="text" id="txt_empresa" placeholder="empresa">
+                        <input type="text" id="txt_cargo" placeholder="cargo">
+                        <input type="text" id="txt_area_atuacao" placeholder="área de atuação">
+                    </div>
+                </section>
+                <a href="/ingresso.html"><button onclick="enviar()">enviar</button></a>
+            </div>
+        </main>
+    </body>
+</html>
