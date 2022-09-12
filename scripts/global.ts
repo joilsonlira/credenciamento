@@ -17,27 +17,12 @@ const cep = <HTMLInputElement>document.getElementById("txt_cep");
 const empresa = <HTMLInputElement>document.getElementById("txt_empresa");
 const cargo = <HTMLInputElement>document.getElementById("txt_cargo");
 const area_atuacao = <HTMLInputElement>document.getElementById("txt_area_atuacao");
-const valor_ingresso = <HTMLElement>document.querySelector("valor_ingresso");
+const valor_ingresso = <HTMLElement>document.getElementById("valor");
 
+const valor:number = 1000;
+
+valor_ingresso.innerText = String(valor);
 radio_brasileiro.checked = true;
-valor_ingresso.innerText = "400";
-function isNascionalidade(){
-    if(radio_brasileiro.checked){
-        radio_estrangeiro.checked = false;
-    }else if(radio_estrangeiro.checked){
-        radio_brasileiro.checked = false;
-    }
-
-    if(estudante.checked == true){
-        identificacao_estudantil.classList.toggle("isVisible");
-        identificacao_estudantil.required = true
-    }else{
-        identificacao_estudantil.classList.remove("isVisible")
-        identificacao_estudantil.required = false
-    }
-}
-
-
 
 function enviar(){
     console.log(nome.value);
